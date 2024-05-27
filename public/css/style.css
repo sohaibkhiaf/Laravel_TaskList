@@ -179,13 +179,10 @@ form div.form-button-container button:hover{
     background-color: #eeeeee;
 }
 
-
 form div.cancel-form-button{
     display: inline-block;
     margin: .7rem .5rem 0;
 }
-
-
 
 .error-message{
     color: red;

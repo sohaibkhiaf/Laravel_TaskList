@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #222;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+}
+
+body{
+    background-color: #f8f8ff;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+}
+
+.container{
+    margin: 0 15rem;
+    background-color: #f8f8ff;
+    border: .1rem solid #222;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+/* index page */
+.success-message{
+    background-color: green;
+    color: white;
+    padding: .2rem;
+    margin: 0 0 1rem;
+}
+
+div.tasks-container{
+    margin-bottom: 1.5rem;
+}
+
+
+div.add-task-container{
+    padding-bottom: 1.2rem;
+}
+div.add-task-container a.add-task{
+    background: none;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    border: .1rem solid #222;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+div.add-task-container a.add-task:hover{
+    background-color: #eeeeee;
+}
+
+
+div.tasks-container{
+    margin-bottom: 1.2rem;
+}
+div.tasks-container div.task-container{
+    line-height: 1.8;
+    text-align: left;
+}
+div.tasks-container div.task-container a.task{
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+
+
+div.tasks-container .empty-message{
+    text-align: center;
+    color: white;
+    background-color: #222;
+    padding: .2rem;
+}
+
+.w-5 , .h-5 {
+    width: 1.2rem;
+    margin: 0 1rem;
+}
+
+
+/* show */
+
+.description , .long-description{
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.description b , .long-description b{
+    font-weight: bolder;
+}
+
+.created-at , .updated-at{
+    margin: 0;
+}
+
+.complete-state{
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.complete-button-container, .edit-button-container,
+.delete-button-container , .home-button-container{
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+
+div.edit-button-container form button , div.complete-button-container form button ,
+div.delete-button-container form button, div.home-button-container form button{
+    background: none;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    border: .1rem solid #222;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+div.delete-button-container form button:hover{
+    color: white;
+    background-color: red;
+}
+div.complete-button-container form button:hover{
+    background-color: #eeeeee;
+}
+div.edit-button-container form button:hover{
+    background-color: #eeeeee;
+}
+div.home-button-container form button:hover{
+    background-color: #eeeeee;
+}
+
+
+/* create/ edit form */ 
+
+form div{
+    margin: 0;
+}
+
+form div label{
+    display: block;
+    text-align: left;
+}
+
+form div input , form div textarea{
+    width: 100%;
+    border: .1rem solid #222;
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: .5rem;
+    resize: none;
+}
+
+form div.form-button-container{
+    margin: .7rem .5rem 0;
+    display: inline-block;
+}
+form div.form-button-container button {
+    background: none;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    border: .1rem solid #222;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+form div.form-button-container button:hover{
+    background-color: #eeeeee;
+}
+
+
+form div.cancel-form-button{
+    display: inline-block;
+    margin: .7rem .5rem 0;
+}
+
+
+
+.error-message{
+    color: red;
+    text-align: left;
+}
+

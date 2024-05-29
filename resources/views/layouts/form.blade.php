@@ -45,7 +45,12 @@
         </div>
 
         <div class="cancel-form-button">
-            <a href="{{ route('tasks.index') }}">Cancel</a>
+            @isset($task)
+                <a href="{{ route('tasks.show' , ['task' => $task->id]) }}">Cancel</a>
+            @else
+                <a href="{{ route('tasks.index') }}">Cancel</a>
+            @endisset
+
         </div>
 
     </form>
